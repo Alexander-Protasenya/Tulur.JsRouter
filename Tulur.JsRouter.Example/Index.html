@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tulur.Js-Router example</title>
+	<script src="/Scripts/tulur.jsRouter-0.9.1.js"></script>
+</head>
+<body>
+	<h1>
+		Tulur.Js-Router example
+	</h1>
+	<hr />
+	<div class="container">
+		<h3>Menu</h3>
+		<p><a href="/link1/">Link 1</a></p>
+		<p><a href="/link2?name=John&id=2">Link 2 (name=John, id=2)</a></p>
+		<p><a href="/Section1/Section2/Section3/Section4/link3?A=1&b=2">Link 3 (a=1, b=2), Long route</a></p>
+		<p><a href="/link4">Link 4 (Redirect to 'Link 3', b='Hello & world')</a></p>
+		<p><a href="/link5">Link 5 (Not defined route)</a></p>
+	</div>
+	<div class="container">
+		<h3>Content</h3>
+		<div id="content"></div>
+	</div>
+	<script>
+		var router = new Router();
+
+		router.map('/', function () {
+			document.getElementById('content').innerHTML = 'Home';
+		});
+
+		router.map('/link1', function () {
+			document.getElementById('content').innerHTML = 'Link 1';
+		});
+
+		router.map('/link2', function (id, name) {
+			document.getElementById('content').innerHTML = 'Link 2: id=' + id + ', name=' + name;
+		});
+
+		router.map('/Section1/SECTION2/section3/Section4/link3', function (a, b) {
+			document.getElementById('content').innerHTML = 'Link 3: a=' + a + ', b=' + b;
+		});
+
+		router.map('/link4', function () {
+			router.go('/Section1/SECTION2/section3/Section4/link3?b=Hello+%26+world');
+		});
+
+		router.notFound(function (url) {
+			alert('Page "' + url + '" not found');
+		});
+
+		router.restore();
+	</script>
+	<style>
+		.container {
+			float: left;
+			padding: 0 20px;
+		}
+	</style>
+</body>
+</html>
