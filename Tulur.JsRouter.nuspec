@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>Tulur.JsRouter</id>
+		<version>0.9.1</version>
+		<title>Tulur.JsRouter</title>
+		<authors>Alexander Protasenya</authors>
+		<owners>Alexander Protasenya</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<projectUrl>https://github.com/Alexander-Protasenya/Tulur.JsRouter</projectUrl>
+		<description>Lightweight JavaScript router for implementation client side part of SPA</description>
+		<summary>Lightweight JavaScript router for implementation client side part of SPA</summary>
+		<copyright>Copyright 2018, Alexander Protasenya</copyright>
+		<tags>spa single-page-applications router routers javascript javascript-library js lightweight high-performance</tags>
+		<dependencies />
+	</metadata>
+	<files>
+		<file src="Tulur.JsRouter.Example\Scripts\tulur.jsRouter-0.9.1.js" target="content\Scripts\tulur.jsRouter-0.9.1.js" />
+		<file src="Tulur.JsRouter.Example\Scripts\tulur.jsRouter-0.9.1.min.js" target="content\Scripts\tulur.jsRouter-0.9.1.min.js" />
+	</files>
+</package>
