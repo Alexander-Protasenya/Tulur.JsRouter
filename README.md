@@ -13,6 +13,11 @@ Lightweight JavaScript router for implementation “client side” part of [SPA]
 9.	Minimal size: 1 kb approx. for compact version.
 
 ### Usage
+
+This JS library is available on NuGet:
+
+`PM> Install-Package Tulur.JsRouter`
+
 Here is a simple and complete example of using:
 
 ```html
