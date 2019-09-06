@@ -1,16 +1,16 @@
 ## Tulur.JsRouter
-Lightweight JavaScript router for implementation “client side” part of [SPA](https://en.wikipedia.org/wiki/Single-page_application). This library can be useful if you don’t want to use complex client frameworks, like [Angular](https://angular.io/), [React](https://reactjs.org/), [Vue](https://vuejs.org/) or other.
+Lightweight JavaScript router for implementing “client side” part of [SPA](https://en.wikipedia.org/wiki/Single-page_application). This library can be useful if you don’t want to use complex client frameworks, like [Angular](https://angular.io/), [React](https://reactjs.org/), [Vue](https://vuejs.org/) or other.
 
 ### Features
-1.	Tulur.JsRouter does not have dependencies on any components. Implementation based on native JavaScript only (ECMAScript 5).
-2.	This implementation without JavaScript functions setTimeout/setInterval. Using these functions should increase response time and should create extra loading in browser. So, current implementation NOT used them.
-3.	Address of routing not require hash (#) symbol. You can use relative route which you want.
-4.	Support restoring current page. If you click “Refresh” (F5) in your browser or you write Url address manually, system restore current page. Warning: for correct working, your “server side” should support this feature too.
-5.	Support named request parameters. For example, if you use address like `/my?a=1&b=2` you can use JS handler like `function (a, b) { … }` for processing this address. It is important point for me as developer. I faced several similar projects with one complex object of arguments, sometimes it is not clear what exact arguments my handler-function can use. As a result, code based on Tulur.JsRouter should be easier for review/understanding.
-6.	Support dynamic routes. You have possibility to define routes in different JS files, also you have possibility to add new routes dynamically (at any time).
-7.	Support “not found” error handling.
-8.	Support browser history.
-9.	Minimal size: 1 kb approx. for compact version.
+1.	Tulur.JsRouter does not have dependencies on any components. Implementation is based on native JavaScript only (ECMAScript 5).
+2.	This implementation without JavaScript functions setTimeout/setInterval. Using of these functions increases response time and creates extra loading in browser. So, current implementation does not use them.
+3.	Address of routing does not require hash (#) symbol. You can use a relative route which you want.
+4.	Supports restoring of current page. If you click “Refresh” (F5) in your browser or you write URL address manually, the system restores current page.
+5.	Supports named request parameters. For example, if you use an address like `/my?a=1&b=2` you can use JS handler like a `function (a, b) { … }` for processing this address. It is important point for me as a developer. I have several similar projects with single complex objects of arguments, so sometimes it is not clear what exact data my handler-function can use. As a result, the code based on Tulur.JsRouter should be easier for review/understanding.
+6.	Supports dynamic routes. You have a possibility to define routes in different JS files, also you have a possibility to add new routes dynamically (at any time).
+7.	Supports “not found” error handling.
+8.	Supports browser history.
+9.	Minimal size: 1 kb approx. for a compact version.
 
 ### Usage
 
@@ -78,7 +78,7 @@ Here is a simple and complete example of using:
 2.	Example project based on ASP.NET MVC 5. But if you use another "server side" technology, you can take only 2 files: “Tulur.JsRouter.js” & “Index.html”. Example will **NOT** work if you open “Index.html” in your browser without any "server side".
 
 ### Motivation
-At the beginning I tried to find ready component with features which described before. I did not find something like this. As a result I decided implement this component by myself. Also I had time and I wanted to get experience of implementing "client side" routing component.
+At the beginning I tried to find ready component with all features which were described before. I did not find anything like this. As a result I decided to implement this component by myself. Also I had time and I wanted to get experience of implementing "client side" routing component.
 
 ### Donation
 If my project help you, you can support my motivation to continue working on this project :-)
