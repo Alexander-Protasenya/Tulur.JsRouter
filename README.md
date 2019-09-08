@@ -43,7 +43,7 @@ Here is a simple and complete example of using:
         <div id="content"></div>
     </div>
     <script>
-        var router = new Router(); // Initialization
+        var router = new Router();
 
         router.map('/', function () {
             document.getElementById('content').innerHTML = 'Home';
