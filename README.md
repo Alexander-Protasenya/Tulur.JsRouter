@@ -80,15 +80,6 @@ Here is a simple and complete example of using:
 ### Motivation
 At the beginning I tried to find ready component with all features which were described before. I did not find anything like this. As a result I decided to implement this component by myself. Also I had time and I wanted to get experience of implementing "client side" routing component.
 
-### Donation
-If my project help you, you can support my motivation to continue working on this project :-)
-
-Webmoney: Z410376614329 or R181376873839
-
-Yandex.Money: 410012007533568
-
-Ethereum: 0xFcaD676Dc74ea60c2fF9fb623ff7903AC898a32d
-
 ### Similar projects
 [https://github.com/chip-js/routes-js](https://github.com/chip-js/routes-js)
 
