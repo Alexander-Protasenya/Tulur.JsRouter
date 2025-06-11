@@ -1,0 +1,17 @@
+{
+	"name": "tulur.jsrouter",
+	"version": "0.9.2",
+	"private": true,
+	"scripts": {
+        "lint": "eslint .",
+		"build": "webpack --config webpack.build.js --mode production",
+		"demostart": "webpack-dev-server --config webpack.demostart.js --mode development"
+	},
+	"devDependencies": {
+		"eslint": "9.27.0",
+		"html-webpack-plugin": "5.6.3",
+		"webpack": "5.99.9",
+		"webpack-cli": "6.0.1",
+		"webpack-dev-server": "5.2.2"
+	}
+}

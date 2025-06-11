@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	<title>Tulur.Js-Router example</title>
+</head>
+<body>
+	<h1>
+		Tulur.Js-Router example
+	</h1>
+	<hr />
+	<div class="container">
+		<h3>Menu</h3>
+		<p><a href="/link1/">Link 1</a></p>
+		<p><a href="/link2?name=John&id=2">Link 2 (name=John, id=2)</a></p>
+		<p><a href="/Section1/Section2/Section3/Section4/link3?A=1&b=2">Link 3 (a=1, b=2), Long route</a></p>
+		<p><a href="/link4">Link 4 (Redirect to 'Link 3', b='Hello & world')</a></p>
+		<p><a href="/link5">Link 5 (Not defined route)</a></p>
+	</div>
+	<div class="container">
+		<h3>Content</h3>
+		<div id="content"></div>
+	</div>
+	<style>
+		.container {
+			float: left;
+			padding: 0 20px;
+		}
+	</style>
+</body>
+</html>
