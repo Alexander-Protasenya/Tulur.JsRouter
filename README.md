@@ -14,11 +14,7 @@ Lightweight JavaScript router for implementing “client side” part of [SPA](h
 
 ### Usage
 
-This JS library is available on NuGet:
-
-`PM> Install-Package Tulur.JsRouter`
-
-Here is a simple and complete example of using:
+Simple and complete example of using:
 
 ```html
 <!DOCTYPE html>
@@ -26,7 +22,7 @@ Here is a simple and complete example of using:
 <head>
     <meta charset="utf-8" />
     <title>Tulur.JsRouter example</title>
-    <script src="/Scripts/tulur.jsRouter-0.9.1.js"></script>
+    <script src="/Scripts/tulur.jsRouter-0.9.2.js"></script>
 </head>
 <body>
     <h1>
@@ -45,19 +41,19 @@ Here is a simple and complete example of using:
     <script>
         var router = new Router();
 
-        router.map('/', function () {
+        router.mapUrl('/', function () {
             document.getElementById('content').innerHTML = 'Home';
         });
 
-        router.map('/link1', function () {
+        router.mapUrl('/link1', function () {
             document.getElementById('content').innerHTML = 'Link 1';
         });
 
-        router.map('/link2', function (id, name) {
+        router.mapUrl('/link2', function (id, name) {
             document.getElementById('content').innerHTML = 'Link 2: id=' + id + ', name=' + name;
         });
 
-        router.notFound(function (url) {
+        router.notFoundUrl(function (url) {
             alert('Page "' + url + '" not found');
         });
 
