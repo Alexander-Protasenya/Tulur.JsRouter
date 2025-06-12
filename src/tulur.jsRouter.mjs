@@ -8,21 +8,19 @@
 
 		const funcStr = handler.toString();
 		const shift = (funcStr.startsWith('function ')) ? 10 : 1; // Common JS function or arrow function
-		const args = funcStr.slice(shift, funcStr.indexOf(')')).split(', ');
+		const argumentNames = funcStr.slice(shift, funcStr.indexOf(')')).split(', ');
 
-		let values;
+		let argumentValues;
 		if (query) {
 			const urlParams = new URLSearchParams(query);
 			const entries = Array.from(urlParams.entries());
-			values = args.map(x => {
+			argumentValues = argumentNames.map(x => {
 				const key = x.toLowerCase();
 				return entries.find(y => key === y[0].toLowerCase())?.[1];
 			});
-		} else {
-			values = [];
 		}
 
-		handler.apply(_scope || document, values);
+		handler.apply(_scope || document, argumentValues);
 	}
 
 	function normalizeUrl(url) {
