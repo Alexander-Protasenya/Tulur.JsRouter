@@ -23,20 +23,22 @@ const router = new Router();
 
 // Map your route
 router.mapUrl('/some-route', (id, name) => {
-	// Any action
-	document.getElementById('content').innerHTML = `id=${id}, name=${name}`;
+  // Any action
+  document.getElementById('content').innerHTML = `id=${id}, name=${name}`;
 });
 
 ...
 
-router.restore(); // For restoring current route, if you click F5 for example
+// For restoring current route, if you click F5 for example
+router.restore();
 ```
 
+Ordinary link in markup:
 ```html
-	<div>
-		<a href="/some-route?id=123&name=abc">Click me</a>
-	</div>
-	<div id="content"></div>
+<div>
+  <a href="/some-route?id=123&name=abc">Click me</a>
+</div>
+<div id="content"></div>
 ```
 
 if you click link, you will see following:
