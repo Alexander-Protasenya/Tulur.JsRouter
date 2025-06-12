@@ -4,8 +4,9 @@
 	"dictionaryDefinitions": [],
 	"dictionaries": [],
 	"words": [
-		"demostart",
 		"tulur",
+		"jsrouter",
+		"demostart",
 	],
 	"ignoreWords": [],
 	"import": []
