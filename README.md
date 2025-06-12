@@ -41,12 +41,12 @@ Ordinary link in markup:
 <div id="content"></div>
 ```
 
-if you click link, you will see following:
+if you click this link, you will see following:
 ```
 id=123, name=abc
 ```
 
-More examples in index.mjs 
+More examples in **index.mjs**
 
 ## Quick start
 1. Install packages (all these packages only for development mode - "devDependencies")
