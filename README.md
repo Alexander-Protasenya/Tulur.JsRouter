@@ -2,7 +2,7 @@
 Lightweight JavaScript router for implementing "client side" part of [SPA](https://en.wikipedia.org/wiki/Single-page_application). This library can be useful if you don’t want to use complex client frameworks, like [Angular](https://angular.io/), [React](https://reactjs.org/), [Vue](https://vuejs.org/) or other.
 
 ## Features
-* Tulur.JsRouter is "zero dependencies" library. Implementation is based on native JavaScript only (ECMAScript 2020).
+* Tulur.JsRouter is "zero dependencies" library. Implementation is based on native JavaScript only (ECMAScript 2022).
 * This implementation without JavaScript functions setTimeout/setInterval. Using of these functions increases response time and creates extra loading in browser. So, current implementation does not use them.
 * Address of routing does not require hash (#) symbol. You can use a relative route which you want.
 * Supports restoring of current page. If you click "Refresh" (F5) in your browser or you write URL address manually, the system restores current page.
