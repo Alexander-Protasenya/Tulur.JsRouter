@@ -1,0 +1,15 @@
+{
+	"compress": {
+		"ecma": 2022,
+		"hoist_funs": true,
+		"hoist_props": true,
+		"hoist_vars": true,
+		"inline": true,
+		"passes": 3,
+		"reduce_funcs": true,
+		"reduce_vars": true,
+		"unsafe": true
+	},
+	"sourceMap": false,
+	"module": true
+}
