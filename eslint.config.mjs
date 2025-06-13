@@ -9,7 +9,7 @@ export default [
 				window: 'readonly',
 				console: 'readonly',
 				URLSearchParams: 'readonly',
-				history:  'readonly',
+				history: 'readonly',
 				alert: 'readonly',
 			},
 		},
